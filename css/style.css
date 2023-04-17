@@ -1,0 +1,81 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  
+}
+.element {
+    width: 300px;
+    background-color: rgb(232, 249, 243);
+    margin: auto;
+    padding: 50px;
+    box-sizing: border-box;
+        text-align: center;
+}
+            
+.subElement {
+    background-color: rgb(163, 163, 173);
+    border-style: ridge;
+    border-color: rgb(40, 34, 46);
+    border-width: 50px;
+    border-radius: 10px / 20px;
+}
+
+.naglowek {
+    text-align: center;
+    color: #ffffff;
+  text-shadow: 2px 2px 5px  black;
+  box-shadow:1px 1px 3px 0px black;
+  background-color:chocolate;
+  padding: 20px;
+}
+
+.naglowek:hover {
+  background-color: red;
+}
+
+h1.naglowek {
+    background: #FF5722;
+    width: 100%;
+    padding: 20px;
+    border-style: ridge;
+    border-color: #F44336;
+    border-width:thick;
+    margin:auto;
+}
+
+.tlo {
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tekst {
+    color: #000000;
+  background-color:#ffe8d8;
+      width:auto;
+        text-align: center;
+  padding: 20px;
+}
+
+.tekst:hover {
+  background-color:  red;
+}
+
+.przycisk {
+    color: #00BCD4;
+    background-color: #2f5bb7;
+    text-transform: math-auto;
+    width: 100%;
+    border-width: thick;
+    border-style: solid;
+    border-color: #2196F3;
+    
+}

@@ -1,0 +1,11 @@
+.body {
+    color: #1B262C;
+    font-family: 'Lato', sans-serif;
+    padding: 15px;
+
+}
+
+.body--dark {
+    background: #191b4e;
+    color: white;
+}

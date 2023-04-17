@@ -1,10 +1,10 @@
-console.log("cześć!");
+let changeBackgroundElement = document.querySelector(".js-changeBackground");
+let containerElement = document.querySelector("body");
+let changeThemeElement = document.querySelector(".js-changeTheme");
 
-let przycisk = document.querySelector(".przycisk");
-let naglowek = document.querySelector(".naglowek");
+changeBackgroundElement.addEventListener("click", () => {
+    containerElement.classList.toggle("body--dark");
 
-przycisk.addEventListener("click", () => {
-    naglowek.remove();
+    changeThemeElement.innerText = containerElement.classList.contains("body--dark") ? "jaśniejszy" : "ciemniejszy";
 });
 
-console.log(przycisk);

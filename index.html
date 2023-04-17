@@ -1,36 +1,111 @@
 <!DOCTYPE html>
 <html lang="pl">
 
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piotr Rutkowski</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&display=swap"
+        rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/body.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
 </head>
 
-<body>
-    <h1 class="naglowek">Piotr Rutkowski</h1>
-    <p>
-        <button class="przycisk">Usuń nagłówek</button>
-    </p>
-    <img src="https://i.postimg.cc/Pfy2grNf/1675626999647.jpg" alt="Piotr Rutkowski" height="200" class="center">
+<body class="body">
+    <div class="container">
+        <header class="header">
+            <p>
+                <button class="js-changeBackground button">
+                    Zmień kolor tła na <span class="js-changeTheme">ciemniejszy</span>
+                </button>
+            </p>
+            <p>
+            <h1>Piotr Rutkowski</h1>
+        </header>
 
-    <p class="tekst">
-        <span class="przywitanie"> <strong>Cześć!</strong></span>
-        Mam na imię Piotr i mam 39 lat.<br>
-        Troszkę mnie nie było <em>ale</em> teraz to się zmieni. :)
-    </p>
-    <h2 class="naglowek">Moje wykształcenie</h2>
-    <p class="tekst">Jestem niedoszłym informatykiem...
-        <i>Ale nigdy nie jest za późno na spełnianie marzeń</i>.
-    </p>
-    <h3 class="naglowek">Moje zainteresowania</h3>
-    <p class="tekst">Lubię gotować oraz tworzyć grafikę.<br>
-        Czasem tworzę kompozycje muzyczne co daje mi dużo spełnienia.</p>
+        <img src="https://i.postimg.cc/vBKgrDT7/myself-2-2023.jpg" alt="Piotr Rutkowski" class="myselfImage">
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__listItem"><a class="menu__link" href="#o-mnie">Coś o mnie?</a></li>
+                <li class="menu__listItem"><a class="menu__link" href="#edukacja">Szkoła?</a></li>
+                <li class="menu__listItem"><a class="menu__link" href="#w-wolnym-czasie">Hobby</a></li>
+            </ul>
+        </nav>
     </div>
+    <main>
+
+        <div class="container">
+            <section id="o-mnie">
+                <h2 class="subHeader">Coś o mnie</h2>
+                <p class="chapter">Mam na imię Piotr i mam 39 lat.<br>
+                    Troszkę mnie nie było <em>ale</em> teraz to się zmieni :) ... </p>
+                <p class="chapter">W moim wieku czas płynie zdecydowanie szybciej ;) ...</p>
+
+            </section>
+            <section id="edukacja">
+                <h2 class="subHeader">Edukacja</h2>
+                <p class="chapter">
+                    Jestem niedoszłym informatykiem...
+                    <i>Ale nigdy nie jest za późno na spełnianie marzeń.</i>
+                </p>
+                <p class="chapter">
+                    Skończyłem szkołę średnią o profilu informatyczno-matematycznym.
+                    <i>Studia po tej szkole, wydawały mi się wtedy zupełnie niepotrzebne</i>
+                </p>
+                <p class="chapter">
+                    Więcej o mnie będę rozwijać dalszych lekcjach :P </p>
+            </section>
+            <section id="w-wolnym-czasie">
+                <h2 class="subHeader">W wolnym czasie</h2>
+                <p class="chapter">
+                    Lubię gotować oraz tworzyć grafikę.<br>
+                    Czasem tworzę kompozycje muzyczne co daje mi dużo spełnienia.
+                    :)))) Pozdrawiam WSZYSTKICH :d</p>
+            </section>
+            <div class="tableContainer">
+                <table class="table">
+                    <caption class="table__caption">Moje utwory</caption>
+                    <tr class="table__row">
+                        <th class="table__cell table__header" scope="col">Tytuł utworu</th>
+                        <th class="table__cell table__header" scope="col">Autor</th>
+                        <th class="table__cell table__header" scope="col">Gatunek</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell">Lullaby</th>
+                        <td class="table__cell">Rootee</td>
+                        <td class="table__cell">Dance</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell">Rock'n'roll</th>
+                        <td class="table__cell">Rootee</td>
+                        <td class="table__cell">Rock</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell">Sad for today</th>
+                        <td class="table__cell">Rootee</td>
+                        <td class="table__cell">Chillout</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <hr>
+        <h3>Kontakt</h3>
+        <p>
+            <a class="footer__contactLink" href="mailto:ewelinkapiotrek.53@gmail.com">Napisz
+                do mnie maila!</a>
+        </p>
+        <hr>
+    </footer>
 </body>
 
 </html>

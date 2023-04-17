@@ -2,80 +2,92 @@ html {
     box-sizing: border-box;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: inherit;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;  
-}
-.element {
-    width: 300px;
-    background-color: rgb(232, 249, 243);
-    margin: auto;
-    padding: 50px;
-    box-sizing: border-box;
-        text-align: center;
-}
-            
-.subElement {
-    background-color: rgb(163, 163, 173);
-    border-style: ridge;
-    border-color: rgb(40, 34, 46);
-    border-width: 50px;
-    border-radius: 10px / 20px;
-}
-
-.naglowek {
-    text-align: center;
-    color: #ffffff;
-  text-shadow: 2px 2px 5px  black;
-  box-shadow:1px 1px 3px 0px black;
-  background-color:chocolate;
-  padding: 20px;
-}
-
-.naglowek:hover {
-  background-color: red;
-}
-
-h1.naglowek {
-    background: #FF5722;
-    width: 100%;
-    padding: 20px;
-    border-style: ridge;
-    border-color: #F44336;
-    border-width:thick;
-    margin:auto;
-}
-
-.tlo {
-    background-color: #ffffff;
+.myselfImage {
+    width: 200px;
+    height: auto;
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 100px;
+    box-shadow: 0px 0px 5px 2px rgb(0, 0, 0);
 }
 
-.tekst {
-    color: #000000;
-  background-color:#ffe8d8;
-      width:auto;
-        text-align: center;
-  padding: 20px;
+.button {
+
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: 10px ridge blueviolet;
+    background-color: crimson;
+    color: #ffffff;
+
 }
 
-.tekst:hover {
-  background-color:  red;
+.button:hover {
+    background-color: #ffffff;
+    COLOR: BLACK;
 }
 
-.przycisk {
-    color: #00BCD4;
-    background-color: #2f5bb7;
-    text-transform: math-auto;
+
+.chapter {
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+.header {
+    background-color: #191b4e;
+    padding: 10px;
+    text-align: center;
+    color: #d5dfcb;
+    border: 3px dotted skyblue;
+    border-radius: 100px;
+}
+
+.subHeader {
+    margin-top: 30px;
+    padding: 20px;
+    border-bottom: 2px dotted #00c3ff;
+}
+
+.table {
+    font-family: 'Lato', sans-serif;
+    border-collapse: collapse;
+    margin-top: 20px;
     width: 100%;
-    border-width: thick;
-    border-style: solid;
-    border-color: #2196F3;
-    
+}
+
+.footer {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer__contactLink {
+    color: #000000;
+    background-color: #009688;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 7px;
+}
+
+.footer__contactLink:hover {
+    background-color: #ffffff;
+}
+
+.js-buttonTitles {
+    padding: 5px;
+    margin-top: 20px;
 }

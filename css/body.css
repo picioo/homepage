@@ -1,11 +1,12 @@
 .body {
-    color: #1B262C;
-    font-family: 'Lato', sans-serif;
-    padding: 15px;
-
+  color: #1b262c;
+  font-family: "Lato", sans-serif;
+  padding: 15px;
+  background-image: url(../img/background.png);
 }
 
 .body--dark {
-    background: #191b4e;
-    color: white;
+  background: #191b4e;
+  color: white;
+  background-image: url(../img/background.png);
 }

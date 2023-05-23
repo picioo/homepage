@@ -18,10 +18,13 @@
     <link href="css/container.css" rel="stylesheet">
     <link href="css/table.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
+    <link href="css/time.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
+    <script defer src="js/today-is.js"></script>
+
 </head>
 
-<body class="body">
+<body class="body" onload="czas()">
     <div class="container">
         <header class="header">
             <p>
@@ -127,6 +130,9 @@
         </div>
     </main>
     <footer class="footer">
+        <p>Dzisiaj mamy:</p>
+        <span class="data" id="data"></span>
+  
         <hr>
         <h3>Kontakt</h3>
         <p>
